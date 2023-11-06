@@ -19,6 +19,7 @@
         ]
     },
     'version': '0.1',
+ "images": ['static/description/website.png'],
 
     'depends': ['base','portal','web','website', 'website_sale','website_blog'],
     'data': [
