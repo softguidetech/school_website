@@ -1,0 +1,903 @@
+<odoo>
+    <data>
+         <record id="menu_about" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/about</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">20</field>
+        </record>
+        <record id="menu_courses" model="website.menu">
+            <field name="name">Courses</field>
+            <field name="url">/courses</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">21</field>
+        </record>
+        <record id="menu_services" model="website.menu">
+            <field name="name">Our Services</field>
+            <field name="url">/services</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">22</field>
+        </record>
+
+        <template id="custom_homepage" inherit_id="website.homepage" name="Home">
+            <xpath expr="//t[@t-call='website.layout']" position="replace">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'homepage'"/>
+                    <div class="oe_structure"/>
+
+                    <section class="s_masonry_block o_colored_level" data-vcss="001" data-vxml="001"
+                             data-snippet="s_masonry_block" data-name="Masonry" style="">
+                        <div class="container-fluid">
+                            <div class="row o_grid_mode" data-row-count="10">
+
+
+                                <div class="o_grid_item text-center o_cc o_cc2 o_colored_level g-height-10 oe_img_bg o_bg_img_center g-col-lg-8 col-lg-8"
+                                     data-name="Block"
+                                     style="grid-area: 1 / 5 / 11 / 13; z-index: 2; background-image: url(&quot;/school_figma/static/description/choice.png&quot;);"
+                                     data-original-id="1045"
+                                     data-original-src="/school_figma/static/description/choice.png"
+                                     data-mimetype="image/png" data-resize-width="1021">
+                                    <h3>
+                                        <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">
+                                        <br/>
+                                    </p>
+                                </div>
+
+
+                                <div class="o_grid_item o_colored_level g-col-lg-4 g-height-10 col-lg-4"
+                                     style="grid-area: 1 / 1 / 11 / 5; z-index: 3; background-color: rgb(247, 242, 242);">
+                                    <h2>
+                                        <strong>
+                                            <span style="font-size: 48px;">The
+                                                <font style="color: rgb(255, 0, 0);">Smart</font>
+                                            </span>
+                                        </strong>
+                                        <br/>
+                                        <strong>
+                                            <span style="font-size: 48px;">Choice For
+                                                <font style="color: rgb(255, 0, 0);">Future</font>
+                                            </span>
+                                        </strong>
+                                    </h2>
+                                    <p>
+                                        <font class="text-o-color-2">
+                                            <strong>
+                                                <span style="font-size: 18px;">Elearn is a global training provider
+                                                    based across the UK that specialises in accredited and bespoke
+                                                    training courses. We crush the...
+                                                </span>
+                                            </strong>
+                                        </font>
+                                        <br/>
+                                    </p>
+                                    <form method="get" data-snippet="s_searchbar_input"
+                                          class="o_searchbar_form s_searchbar_input" action="/website/search"
+                                          data-name="Search">
+                                        <div role="search" class="input-group">
+                                            <button type="button" class="btn oe_search_button btn-navy">
+                                                <span class="fa fa-search"/>
+                                                <br/>
+                                            </button>
+
+                                            <input type="search" name="search"
+                                                   class="search-query form-control oe_search_box None"
+                                                   placeholder="Search for location..." data-search-type="all"
+                                                   data-limit="5" data-order-by="name asc"
+                                                   data-display-description="true" data-display-extra-link="true"
+                                                   data-display-detail="true" data-display-image="true"
+                                                   autocomplete="off"/>
+                                            <div class="input-group-prepend">
+                                                <button type="submit" aria-label="Search" title="Search"
+                                                        class="btn oe_search_button btn-primary">
+                                                    <i class="oi oi-magnifying-glass"/>
+                                                    ​Continue
+                                                </button>
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+                                    </form>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <div class="row">
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <p>
+                                        <br/>
+                                    </p>
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-4"><span class="oe-tabs"
+                                                                               style="width: 25px;"></span>​<span
+                                                    class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                                       style="width: 40px;"></span>​&amp;nbsp;Learn
+                                                The Latest Sk​ills
+                                            </font>
+                                        </strong>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level pt0 col-lg-3">
+                                            <img src="/school_figma/static/description/pic1.png" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;" data-original-id="609"
+                                                 data-original-src="/school_figma/static/description/pic1.png"
+                                                 data-mimetype="image/png" data-resize-width="80"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level pt0" style="">
+                                            <p style="color: white;">
+                                                <strong>
+                                                    <font class="text-o-color-4"/>
+                                                </strong>
+                                                Contrary to popular belief, Lorem Ipsum&amp;nbsp; not simply random
+                                                text. It has roots in a BC, making it over 2000 years old.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <p>
+                                        <br/>
+                                    </p>
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-4"><span class="oe-tabs"
+                                                                               style="width: 25px;"></span>​<span
+                                                    class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                                       style="width: 40px;"></span>​Get
+                                                Ready For a Career
+                                            </font>
+                                        </strong>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-3">
+                                            <img src="/school_figma/static/description/pic2.png" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;" data-original-id="611"
+                                                 data-original-src="/school_figma/static/description/pic2.png"
+                                                 data-mimetype="image/png" data-resize-width="77"
+                                                 data-bs-original-title="" title="" aria-describedby="tooltip473436"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level pt16">
+                                            <p style="color: white;">
+                                                <strong>
+                                                    <font class="text-o-color-4">Contrary to popular belief, Lorem Ipsum
+                                                        is not simply random text. It has roots in a BC, making it over
+                                                        2000 years old.
+                                                    </font>
+                                                </strong>
+                                                .
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o_colored_level col-lg-4" style="background-color: rgb(75, 7, 90);">
+                                    <p>
+                                        <br/>
+                                    </p>
+                                    <h4>
+                                        <strong>
+                                            <font class="text-o-color-3"><span class="oe-tabs"
+                                                                               style="width: 25px;"></span>​<span
+                                                    class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                                       style="width: 40px;"></span>​<span
+                                                    class="oe-tabs" style="width: 40px;"></span>​Earn a Certificate
+                                            </font>
+                                        </strong>
+                                        <br/>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="o_colored_level offset-lg-1 pt0 col-lg-3">
+                                            <img src="/school_figma/static/description/pic3.png" alt=""
+                                                 class="img-fluid rounded-circle img o_we_custom_image"
+                                                 style="width: 100% !important;" data-original-id="612"
+                                                 data-original-src="/school_figma/static/description/pic3.png"
+                                                 data-mimetype="image/png" data-resize-width="84"
+                                                 data-bs-original-title="" title="" aria-describedby="tooltip988502"/>
+                                        </div>
+                                        <div class="col-lg-6 o_colored_level">
+                                            <p style="color: white;">
+                                                &amp;nbsp;Contrary to popular belief, Lorem Ipsum is not simply random
+                                                text. It has roots in a BC, making it over 2000 years old.
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_text_block o_colored_level pb0 pt32" data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <div class="row" style="">
+                                <div class="col-lg-12 o_colored_level pt0" style="">
+                                    <h2><span class="oe-tabs" style="width: 25px;"></span>​<span class="oe-tabs"
+                                                                                                 style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​
+                                        <strong>Our Tracks</strong>
+                                        <br/>
+                                    </h2>
+                                    <p><span class="oe-tabs" style="width: 25px;"></span>​<span class="oe-tabs"
+                                                                                                style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                        Lorem Ipsum is simply dummy text of the printing.
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
+                             data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <img src="/school_figma/static/description/des1.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="958"
+                                             data-original-src="/school_figma/static/description/des1.png"
+                                             data-mimetype="image/png" data-resize-width="446" data-bs-original-title=""
+                                             title="" aria-describedby="tooltip517" loading="lazy" style=""/>
+                                        <div class="card-body">
+                                            <div class="s_rating s_rating_inline pt0 pb0" data-vcss="001"
+                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
+                                                <p class="s_rating_title">UI/UX Design
+                                                    <br/>
+                                                </p>
+                                                <div class="s_rating_icons o_not_editable">
+                                                    <span class="s_rating_active_icons"
+                                                          style="color: rgb(255, 156, 0);">
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                    </span>
+                                                    <span class="s_rating_inactive_icons">
+                                                        <i class="fa fa-star-o"/>
+                                                        <i class="fa fa-star-o"/>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="card-title">
+                                                <strong>
+                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>
+                                                </strong>
+                                            </p>
+                                            <p class="card-title">
+                                                <strong>
+                                                    <span style="font-size: 24px;">
+                                                        <font style="color: rgb(244, 69, 11);">$98</font>
+                                                    </span>
+                                                </strong>
+                                            </p>
+                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"
+                                                 data-name="Separator">
+                                                <hr class="w-100 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: dashed;"/>
+                                            </div>
+                                            <p class="card-title"><span class="fa fa-clock-o fa-2x"
+                                                                        data-bs-original-title="" title=""
+                                                                        aria-describedby="tooltip147830"/>&amp;nbsp;
+                                                22hr 30min&amp;nbsp;&amp;nbsp;<span
+                                                        class="fa fa-video-camera text-black fa-2x"
+                                                        data-bs-original-title="" title=""
+                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;
+                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""
+                                                      aria-describedby="tooltip981390"/>
+                                                250 Sales
+                                                <br/>
+                                            </p>
+                                            <section style="background-image: none;" class="o_colored_level pb0">
+                                                <ul>
+                                                    <div class="footer-subscribe">
+                                                        <button type="submit">Join Course</button>
+                                                    </div>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <!--                                        <img src="/web/image/962-2e250411/des2.png" alt=""-->
+                                        <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"-->
+                                        <!--                                             data-original-src="/web/image/959-f82a5263/des2.png"-->
+                                        <!--                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""-->
+                                        <!--                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>-->
+                                        <img src="/school_figma/static/description/des2.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="959"
+                                             data-original-src="/school_figma/static/description/des2.png"
+                                             data-mimetype="image/png" data-resize-width="445" data-bs-original-title=""
+                                             title="" aria-describedby="tooltip998847" loading="lazy" style=""/>
+                                        <div class="card-body">
+                                            <div class="s_rating pb0 pt0 s_rating_inline" data-vcss="001"
+                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
+                                                <p class="s_rating_title">UI/UX Design
+                                                    <br/>
+                                                </p>
+                                                <div class="s_rating_icons o_not_editable">
+                                                    <span class="s_rating_active_icons"
+                                                          style="color: rgb(255, 156, 0);">
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                    </span>
+                                                    <span class="s_rating_inactive_icons">
+                                                        <i class="fa fa-star-o"/>
+                                                        <i class="fa fa-star-o"/>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <h3 class="card-title">
+                                                <strong>
+                                                    <span style="font-size: 24px;">UI/UX Design for Beginners</span>
+                                                </strong>
+                                            </h3>
+                                            <p class="card-title">
+                                                <strong>
+                                                    <span style="font-size: 24px;">
+                                                        <font style="color: rgb(244, 69, 11);">$98</font>
+                                                    </span>
+                                                </strong>
+                                            </p>
+                                            <div class="s_hr text-start pb0 pt0" data-snippet="s_hr"
+                                                 data-name="Separator">
+                                                <hr class="w-100 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: dashed;"/>
+                                            </div>
+                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"
+                                                                       data-bs-original-title="" title=""
+                                                                       aria-describedby="tooltip147830"/>&amp;nbsp; 22hr
+                                                30min&amp;nbsp;&amp;nbsp;<span
+                                                        class="fa fa-video-camera text-black fa-2x"
+                                                        data-bs-original-title="" title=""
+                                                        aria-describedby="tooltip673392"/>&amp;nbsp; 34 Courses&amp;nbsp;&amp;nbsp;
+                                                <span class="fa fa-download fa-2x" data-bs-original-title="" title=""
+                                                      aria-describedby="tooltip981390"/>
+                                                250 Sales
+                                                <br/>
+                                            </p>
+                                            <section style="background-image: none;" class="o_colored_level pb0">
+                                                <ul>
+                                                    <div class="footer-subscribe">
+                                                        <button type="submit">Join Course</button>
+                                                    </div>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <!--                                        <img src="/web/image/963-319f1da6/des3.png" alt=""-->
+                                        <!--                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"-->
+                                        <!--                                             data-original-src="/web/image/960-97ef137c/des3.png"-->
+                                        <!--                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""-->
+                                        <!--                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>-->
+                                        <img src="/school_figma/static/description/des3.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="960"
+                                             data-original-src="/school_figma/static/description/des3.png"
+                                             data-mimetype="image/png" data-resize-width="441" loading="lazy" style=""
+                                             data-bs-original-title="" title="" aria-describedby="tooltip151380"/>
+                                        <div class="card-body">
+                                            <div class="s_rating s_rating_inline pb0 pt0" data-vcss="001"
+                                                 data-icon="fa-star" data-snippet="s_rating" data-name="Rating">
+                                                <p class="s_rating_title">UI/UX Design
+                                                    <br/>
+                                                </p>
+                                                <div class="s_rating_icons o_not_editable">
+                                                    <span class="s_rating_active_icons"
+                                                          style="color: rgb(255, 156, 0);">
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                        <i class="fa fa-star"/>
+                                                    </span>
+                                                    <span class="s_rating_inactive_icons">
+                                                        <i class="fa fa-star-o"/>
+                                                        <i class="fa fa-star-o"/>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <strong>
+                                                    <span style="font-size: 24px">UI/UX Design for Beginners</span>
+                                                </strong>
+                                            </h3>
+                                            <p>
+                                                <strong>
+                                                    <span style="font-size: 24px">
+                                                        <font style="color: rgb(244, 69, 11)">$98</font>
+                                                    </span>
+                                                </strong>
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                            <p class="card-text"><span class="fa fa-clock-o fa-2x"/>&amp;nbsp; 22hr
+                                                30min&amp;nbsp;&amp;nbsp;<span class="fa fa-video-camera fa-2x"/>&amp;nbsp;
+                                                34 Courses&amp;nbsp;&amp;nbsp;
+                                                <span class="fa fa-download fa-2x"/>
+                                                250 Sales
+                                                <br/>
+                                            </p>
+                                            <section style="background-image: none;" class="o_colored_level pb0">
+                                                <ul>
+                                                    <div class="footer-subscribe">
+                                                        <button type="submit">Join Course</button>
+                                                    </div>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_masonry_block o_colored_level pt0" data-vcss="001" data-vxml="001"
+                             data-snippet="s_masonry_block" data-name="Masonry"
+                             style="background-color: rgb(247, 228, 238); background-image: none;">
+                        <div class="container-fluid">
+                            <div class="row o_grid_mode" data-row-count="10">
+                                <div class="o_grid_item col-lg-6 g-col-lg-6 g-height-10 o_grid_item_image text-center o_colored_level"
+                                     data-name="Block"
+                                     style="grid-area: 1 / 1 / 11 / 7; z-index: 6; background-color: rgb(247, 228, 238); background-image: none;">
+                                    <img src="/school_figma/static/description/premium.png" alt=""
+                                         class="img img-fluid mx-auto o_we_custom_image" data-original-id="792"
+                                         data-original-src="/school_figma/static/description/premium.png"
+                                         data-mimetype="image/png" data-resize-width="797" data-bs-original-title=""
+                                         title="" aria-describedby="tooltip492873" loading="lazy" style=""/>
+                                </div>
+                                <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_colored_level o_cc o_cc2"
+                                     data-name="Block"
+                                     style="grid-area: 1 / 7 / 6 / 10; z-index: 2; background-color: rgb(247, 228, 238); background-image: none;">
+                                    <h3 style="text-align: left;">
+                                        <font class="text-black">
+                                            <strong>
+                                                <span style="font-size: 36px;">Premium</span>
+                                            </strong>
+                                        </font>
+                                        <font style="color: rgb(255, 119, 0);">
+                                            <strong>
+                                                <span style="font-size: 36px;">Learning</span>
+                                            </strong>
+                                        </font>
+                                        <font class="text-black">
+                                            <strong>
+                                                <span style="font-size: 36px;">Experience</span>
+                                            </strong>
+                                        </font>
+                                        <br/>
+                                    </h3>
+                                </div>
+
+                                <div class="o_grid_item text-center o_colored_level g-col-lg-1 o_cc o_cc4 g-height-2 col-lg-1"
+                                     data-name="Block"
+                                     style="grid-area: 6 / 7 / 8 / 8; z-index: 4; background-color: rgb(247, 228, 238); position: relative;">
+                                    <p>
+                                        <span class="fa fa-heart rounded" data-bs-original-title="" title=""
+                                              aria-describedby="tooltip113066"
+                                              style="color: rgb(236, 39, 125); background-color: rgb(74, 16, 49);"/>
+                                    </p>
+                                    <p>
+                                        <span style="background-color: rgb(74, 16, 49); color: rgb(255, 156, 0);"
+                                              aria-describedby="tooltip113066" title="" data-bs-original-title=""
+                                              class="fa fa-puzzle-piece rounded"/>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="o_grid_item text-center o_colored_level o_cc o_cc2 g-col-lg-5 g-height-2 col-lg-5"
+                                     data-name="Block"
+                                     style="grid-area: 6 / 8 / 8 / 13; z-index: 5; background-color: rgb(240, 229, 229); background-image: none;">
+                                    <h4 style="text-align: left;">
+                                        <strong>
+                                            <font class="text-black">
+                                                <span style="font-size: 18px;">Easily Accessible</span>
+                                            </font>
+                                        </strong>
+                                        <br/>
+                                        <span style="font-size: 16px;">
+                                        </span>
+                                        <font class="text-black">
+                                            <span style="font-size: 16px;">Learning Will fell Very Comfertable With
+                                                Courselab
+                                            </span>
+                                        </font>
+                                    </h4>
+                                    <p style="text-align: left;">
+                                        <strong>
+                                            <font class="text-black">Fun learning expe</font>
+                                        </strong>
+                                        <br/>
+                                        <font class="text-black">
+                                            <span style="font-size: 16px;">Learning Will fell Very Comfertable With
+                                                Courselab
+                                            </span>
+                                        </font>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block o_colored_level pb0 pt32" data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <div class="row" style="">
+                                <div class="col-lg-12 o_colored_level pt0" style="">
+                                    <h2><span class="oe-tabs" style="width: 25px;"/>​<span class="oe-tabs"
+                                                                                           style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​
+                                        <strong>&amp;nbsp;&amp;nbsp;&amp;nbsp; What Student's Say</strong>
+                                        <br/>
+                                    </h2>
+                                    <p><span class="oe-tabs" style="width: 25px;"/>​<span class="oe-tabs"
+                                                                                          style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                        Lorem Ipsum is simply dummy text of the printing.
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_media_list pt32 pb32 o_cc o_cc2 o_colored_level o_half_screen_height"
+                             data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                             style="background-image: none;">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed s_col_no_bgcolor">
+
+                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center">
+                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                                            <br/>
+                                        </div>
+                                        <div class="s_media_list_body col-lg-8">
+                                            <p>
+                                                <span style="font-size: 14px;">“Complete account of the system and
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">expound the actual Contrary to popular
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">belief, Lorem Ipsum is not simply</span>
+                                                <br/>
+                                                <span style="font-size: 14px;">random text. It has roots”</span>
+                                            </p>
+                                            <p>
+                                                <img src="/school_figma/static/description/kirk.png" alt=""
+                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
+                                                     style="width: 25% !important;" data-original-id="653"
+                                                     data-original-src="/school_figma/static/description/kirk.png"
+                                                     data-mimetype="image/png" data-resize-width="36" loading="lazy"/>
+                                                <strong>DannetteP.Cervantes</strong>
+                                            </p>
+                                            <p>Web&amp;nbsp;Developper
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"
+                                         style="">
+                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                                            <br/>
+                                        </div>
+                                        <div class="s_media_list_body col-lg-8">
+                                            <p>
+                                                <span style="font-size: 14px;">“Teachings of the great explorer of
+                                                    truth,
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">the master-builder of human happiness.
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">No one rejects, dislikes, or avoids
+                                                    pleasure
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">itself, pleasure itself.”</span>
+                                            </p>
+                                            <p>
+                                                <strong>​</strong>
+                                                <img src="/school_figma/static/description/denette.png" alt=""
+                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
+                                                     style="width: 25% !important;" data-original-id="698"
+                                                     data-original-src="/school_figma/static/description/denette.png"
+                                                     data-mimetype="image/png" data-resize-width="34" loading="lazy"/>
+                                                <strong>Clara R.Altman</strong>
+                                            </p>
+                                            <p>Web Design
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s_media_list_item col-lg-4 pb0 pt0" data-name="Media item">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor g-0 o_cc o_cc1 o_colored_level align-items-center"
+                                         style="">
+                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                                            <br/>
+                                        </div>
+                                        <div class="s_media_list_body col-lg-8">
+                                            <p>
+                                                <span style="font-size: 14px;">“There are many variations of passages
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">of Lorem Ipsum available, but the
+                                                    majority
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">have suffered alteration in some form,
+                                                </span>
+                                                <br/>
+                                                <span style="font-size: 14px;">by injected humour”</span>
+                                            </p>
+                                            <p>
+                                                <strong>​</strong>
+                                                <img src="/school_figma/static/description/clara.png" alt=""
+                                                     class="s_media_list_img h-100 w-100 rounded-circle img img-fluid o_we_custom_image"
+                                                     style="width: 25% !important;" data-original-id="699"
+                                                     data-original-src="/school_figma/static/description/clara.png"
+                                                     data-mimetype="image/png" data-resize-width="30" loading="lazy"/>
+                                                <strong>Clara R.Altman</strong>
+                                            </p>
+                                            <p>UI&amp;amp;UX Designer
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="s_text_block o_colored_level pb0 pt32" data-snippet="s_text_block" data-name="Text"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <div class="row" style="">
+                                <div class="col-lg-12 o_colored_level pt0" style="">
+                                    <div class="s_hr text-start pb32 pt24" data-snippet="s_hr" data-name="Separator">
+                                        <hr class="w-100 mx-auto"
+                                            style="border-top-width: 7px; border-top-style: dotted;"/>
+                                    </div>
+                                    <h2><span class="oe-tabs" style="width: 25px;"></span>​<span class="oe-tabs"
+                                                                                                 style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​
+                                        <strong>Our Tracks</strong>
+                                        <br/>
+                                    </h2>
+                                    <p><span class="oe-tabs" style="width: 25px;"></span>​<span class="oe-tabs"
+                                                                                                style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​<span
+                                            class="oe-tabs" style="width: 40px;"></span>​<span class="oe-tabs"
+                                                                                               style="width: 40px;"></span>​&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                        Lorem Ipsum is simply dummy text of the printing.
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
+                             data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <img src="/school_figma/static/description/matthew.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="637"
+                                             data-original-src="/school_figma/static/description/matthew.png"
+                                             data-mimetype="image/png" data-resize-width="362" loading="lazy" style=""/>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Matthew E.McNatt
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text">Professor @George Brown College</p>
+                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
+                                                ullamcolaboris nisi ut allquip ex commodo.
+                                            </p>
+                                            <p class="card-text">
+                                                <font style="color: rgb(239, 94, 6);">
+                                                    <span style="font-size: 18px;">Engineering physics</span>
+                                                </font>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <img src="/school_figma/static/description/tracy.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="638"
+                                             data-original-src="/school_figma/static/description/tracy.png"
+                                             data-mimetype="image/png" data-resize-width="417" loading="lazy" style=""/>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Tracy D.Wright
+                                            </h3>
+                                            <p class="card-text">Professor @George Brown College</p>
+                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
+                                                ullamcolaboris nisi ut allquip ex commodo.
+                                            </p>
+                                            <p class="card-title">
+                                                <font style="color: rgb(239, 94, 6);">
+                                                    <span style="font-size: 18px;">Engineering physics</span>
+                                                </font>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                    <div class="card text-bg-white h-100">
+                                        <img src="/school_figma/static/description/cynthia.png" alt=""
+                                             class="card-img-top img img-fluid o_we_custom_image" data-original-id="639"
+                                             data-original-src="/school_figma/static/description/cynthia.png"
+                                             data-mimetype="image/png" data-resize-width="401" loading="lazy" style=""
+                                             data-bs-original-title="" title="" aria-describedby="tooltip387637"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Cynthia A.Nelso
+                                                <br/>
+                                            </h3>
+                                            <p class="card-text">Professor @George Brown College</p>
+                                            <p class="card-text">&amp;nbsp;Ut enim add minim veniam,quis nost execution
+                                                ullamcolaboris nisi ut allquip ex commodo.
+                                            </p>
+                                            <h3 class="card-title o_default_snippet_text">
+                                                <font style="color: rgb(239, 94, 6);">
+                                                    <span style="font-size: 18px;">Engineering physics</span>
+                                                </font>
+                                                <br/>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_call_to_action o_cc o_cc3 pt48 o_colored_level pb104"
+                             data-snippet="s_call_to_action" data-name="Call to Action" style="background-image: none;">
+                        <div class="o_container_small">
+                            <div class="row">
+                                <div class="pb16 o_colored_level col-lg-8">
+                                    <h4>
+                                        <b>
+                                            <span class="oe-tabs" style="width: 5px;"/>
+                                            <span class="oe-tabs" style="width: 34.0167px;"/>​
+                                            <span class="oe-tabs"
+                                                  style="width: 40px;"/>
+                                            ​Subscribe
+                                            to our newsletter​
+                                        </b>
+                                        <br/>
+                                    </h4>
+                                    <p><span class="oe-tabs" style="width: 5px;"/>​<span class="oe-tabs"
+                                                                                         style="width: 40px;"/>​<span
+                                            class="oe-tabs" style="width: 40px;"/>​lorem ipsum is simply dummy
+                                        text of
+                                        the printing
+                                        <br/>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <style>
+                                .footer-subscribe {
+                                text-align: center;
+                                }
+                                .email-input {
+                                display: inline-block;
+                                border: 1px solid #ccc;
+                                border-radius: 50px; /* This creates an oval shape */
+                                overflow: hidden;
+                                }
+                                .email-input input[type="email"] {
+                                padding: 10px;
+                                border: none;
+                                outline: none;
+                                border-radius: 50px; /* Match the container's border radius */
+                                }
+                                .email-input button {
+                                background-color: orange;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 50px; /* Match the container's border radius */
+                                cursor: pointer;
+                                }
+                            </style>
+
+
+                            <section style="background-image: none;" class="o_colored_level pb0">
+                                <ul>
+                                    <div class="footer-subscribe">
+                                        <div class="email-input">
+                                            <input type="email" spellcheck="false" placeholder="Email Address"/>
+                                            <button type="submit">Send</button>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

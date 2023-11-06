@@ -1,0 +1,101 @@
+<odoo>
+    <data>
+
+        <template id="lapalma_header_website_template" inherit_id="website.layout" name="Lapalma Header">
+            <xpath expr="//header" position="replace">
+                <header class="header-config o_hoverable_dropdown o_header_disappears"
+                        style="font-family: Helvetica !important;">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg py-3 header-flexbox header-config"
+                             style="font-family: Helvetica !important;">
+                            <!-- Logo -->
+                            <div class="d-none d-lg-block flex-grow-1">
+<!--                                <a class="" href="#">-->
+<!--                                    <img src="/lapalma_website/static/logo.svg"/>-->
+<!--                                </a>-->
+                            </div>
+                            <div class="d-block d-lg-none">
+<!--                                <a class="" href="#">-->
+<!--                                    <img style="height:50px;" src="/lapalma_website/static/logo.svg"/>-->
+<!--                                </a>-->
+                            </div>
+
+                            <!-- Toggle Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="navbar-toggler-icon"></i>
+                            </button>
+
+                            <!-- Navigation Menu -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                                 style="font-family: Helvetica !important;">
+                                <ul class="navbar-nav mr-auto flex-grow-1" style="font-family: Helvetica !important;">
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu">
+                                            <t t-set="item_class" t-valuef="nav-item flex-grow-1"/>
+                                            <t t-set="link_class" t-valuef="nav-link font-weight-medium"/>
+                                        </t>
+                                    </t>
+
+                                </ul>
+
+
+                                <div class="d-none d-lg-block flex-grow-1" style="font-family: Helvetica !important;">
+                                    <!-- Language Selector -->
+                                    <t t-call="website.placeholder_header_language_selector">
+                                        <t t-set="_div_classes" t-value="'ml-2'"/>
+                                    </t>
+                                </div>
+                                <ul class="navbar-nav mr-auto flex-grow-1" style="font-family: Helvetica !important;">
+                                    <t t-call="website_sale.header_cart_link">
+                                        <t t-set="_text" t-value="True"/>
+                                        <t t-set="_item_class" t-value="'nav-item'"/>
+                                        <t t-set="_link_class" t-value="'nav-link'"/>
+                                    </t>
+                                </ul>
+                                <!-- Sign In & User Dropdown -->
+                                <div class="d-none d-lg-block" style="font-family: Helvetica !important;">
+                                    <ul class="navbar-nav mr-auto">
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item"
+                                               style="font-family: Helvetica !important;"/>
+                                            <t t-set="_link_class" t-valuef="nav-link font-weight-bold"
+                                               style="font-family: Helvetica !important;"/>
+                                        </t>
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown"
+                                               style="font-family: Helvetica !important;"/>
+                                            <t t-set="_link_class" t-valuef="nav-link font-weight-bold"
+                                               style="font-family: Helvetica !important;"/>
+                                        </t>
+                                    </ul>
+                                </div>
+
+                                <div class="d-block d-lg-none">
+                                    <ul class="navbar-nav mr-auto">
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item"/>
+                                            <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                        </t>
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown"/>
+                                            <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                        </t>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+            </xpath>
+        </template>
+
+
+
+
+    </data>
+</odoo>

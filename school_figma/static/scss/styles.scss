@@ -1,0 +1,939 @@
+@font-face {
+  font-family: Helvetica;
+  src: url('/lapalma_website/static/fonts/helivetica/HelveticaNeueBold.ttf') format('opentype');
+}
+
+.header-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5e3c1;
+  //height: 151px;
+}
+
+header {
+  z-index: 9999;
+
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-config {
+  background-color: #d5e3c1 !important;
+
+  //height: 151px !important;
+  min-height: 151px;
+
+}
+
+/* desktop styles */
+.header-config {
+  background-color: #d5e3c1 !important;
+  min-height: 151px;
+  /* Add your desktop-specific CSS styles here */
+}
+
+
+/* mobile styles */
+@media (max-width: 992px) {
+  .header-flexbox {
+    background-color: #d5e3c1;
+
+  }
+
+  .flex-grow-1 {
+    flex-grow: 0;
+
+    justify-content: left;
+  }
+
+  .header-config {
+
+    background-color: #d5e3c1 !important;
+    min-height: auto;
+  }
+}
+
+
+.header-config .navbar .navbar-nav {
+  margin-bottom: 0;
+}
+
+.header-config .navbar .navbar-nav .nav-item .active > span {
+  background: #fff;
+  color: black;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.header-config .navbar .navbar-nav a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.header-config .navbar .navbar-nav > li {
+  display: inline-block;
+}
+
+.header-config .navbar .navbar-nav > li > a {
+  padding: 10px 0px;
+  color: #0a0a0a;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+
+.header-config .navbar .navbar-nav > li > a > span {
+  padding: 5px 20px;
+  display: inline-block;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  border-radius: 30px;
+}
+
+.header-config .navbar .navbar-nav > li > a:hover > span {
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+#navbarSupportedContent > div.d-none.d-lg-block.flex-grow-1 > div:hover {
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+#navbarSupportedContent > div.d-none.d-lg-block.flex-grow-1 > div > button:hover {
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.navbar-toggler-icon {
+  background-image: url('/lapalma_website/static/togle.svg');
+  background-size: cover; /* You can also use contain, depending on your needs */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px; /* You can set dimensions */
+  height: 30px;
+}
+
+
+:root {
+  --footer-background: #F8F1DA;
+  --text-color: #000000;
+  --text-gray: #000000;
+  --text-heading-gray: #000000;
+  --text-primary: #000000;
+  --button-color: #E2D6E6;
+  --cardbody-color: #ffffcc;
+  --button-border: #6B707C;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/*? footer reset */
+*, *::after, *::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #FAFBFC;
+}
+
+/*? footer containers */
+
+footer {
+  //position: absolute;
+  bottom: 0px;
+  background-color: var(--footer-background);
+  //min-width: 300px;
+  //width: 100vw;
+  //bottom: 0px;
+  display: flex;
+  //align-items: center;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  display: flex;
+  background: var(--footer-background);
+  flex-direction: column;
+  //max-width: 1820px;
+  padding: 100px;
+  padding-top: 0px;
+}
+.card-wrapper {
+  display: flex;
+  background: var(--cardbody-color);
+  flex-direction: column;
+  //max-width: 1820px;
+  padding: 100px;
+  padding-top: 0px;
+}
+
+
+/*? top section */
+.footer-top {
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: start;
+  //align-items: start;
+  //padding: 16px 0px;
+  //justify-content: space-between;
+  text-align: center;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  padding: 16px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--text-gray);
+}
+
+.footer-line {
+  display: block;
+  width: 100%;
+  height: 8px;
+}
+
+/*? footer subscribe */
+.footer-subscribe {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-subscribe > input {
+  border: 1px solid var(--button-border);
+  color: var(--text-color);
+  outline: none;
+  min-height: 36px;
+  background-color: var(--footer-background);
+  font-size: 1.2rem;
+  flex: 1 0 120px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.footer-subscribe > input::placeholder {
+  color: var(--text-color);
+}
+
+.footer-subscribe > button {
+  cursor: pointer;
+  background-color: var(--button-color);
+  border-radius: 23.5px;
+  color: #000000;
+  min-width: 120px;
+  min-height: 36px;
+  height: 42px;
+  width: 150px;
+  flex: 1 0 80px;
+  white-space: nowrap;
+  //padding: 8px 12px;
+  font-family: Helvetica;
+  font-weight: bold;
+  border: 0px;
+  outline: none;
+  border: 1px solid var(--button-border);
+}
+
+/*? footer columns */
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  flex: 2 0 140px;
+  width: 100%;
+  gap: 16px;
+  padding: 24px 8px 16px 8px;
+  margin: 0 auto;
+}
+
+.footer-columns ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-columns ul a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.footer-columns ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-columns ul li {
+  margin-bottom: 16px;
+}
+
+.footer-columns h3 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.125rem;
+  font-family: Helvetica;
+}
+
+.footer-centering {
+  margin: 0 auto;
+}
+
+.footer-columns > section {
+  min-width: 150px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
+
+.footer-logo svg {
+  stroke: var(--text-color);
+  stroke-width: 8px;
+  width: 50px;
+  height: 50px;
+}
+
+
+/*? Footer bottom */
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  padding: 16px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--text-gray);
+}
+
+.footer-bottom > small {
+  font-size: 16px;
+  margin: 0 4px;
+}
+
+.footer-headline > h2 {
+  margin: 0px;
+  color: var(--text-primary);
+}
+
+.footer-headline > p {
+  color: var(--text-gray);
+  margin: 4px 0px 20px 0px;
+}
+
+.footer-line {
+  display: block;
+  min-width: 40px;
+  height: 2px;
+  background-color: var(--text-gray);
+}
+
+/*? socials */
+
+.social-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 30px;
+}
+
+.social-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.social-links ul {
+  display: flex;
+  gap: 12px;
+  list-style-type: none;
+}
+
+/*? mobile */
+
+@media (max-width: 800px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 8px 32px 8px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.js_sale {
+  background-color: #F9F6EC;
+}
+
+#wrap.oe_structure {
+  /* Add your styles here */
+  background-color: #ECA9A1;
+}
+
+.Rectangle-12 {
+  //width: 1512px;
+  height: 480px;
+  flex-grow: 0;
+  //margin: 151px 0 0;
+  padding: 76px 585.9px 72px 74px;
+  background-color: #f9f6ec;
+}
+
+.YOUR-STAYCATION-DESTINATION {
+  width: 772px;
+  height: 332px;
+  margin: 0 80.1px 0 0;
+  font-family: Hunter;
+  font-size: 100px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000;
+}
+
+.Layer1 {
+  width: 206.69px;
+  height: 123.54px;
+  position: absolute;
+  transform: rotate(8.79deg) translateY(-80%);
+  transform-origin: 0 0;
+}
+
+
+.TropicalSticker1 {
+  width: 305.64px;
+  height: 324.33px;
+  transform: translateY(-80%);
+  transform-origin: 0 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+.Rectangle-44 {
+  height: 73px;
+  flex-grow: 0;
+  background-color: #fcd672;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.WhoAreWe {
+  font-size: 25px;
+  font-family: Hunter;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  word-wrap: break-word;
+  padding: 0 50px;
+}
+
+.WhoAreWe-1 {
+  color: #C6803F;
+}
+
+.WhoAreWe-2 {
+  color: #1E1E1E;
+}
+
+.WhoAreWe-3 {
+  color: #5B7D65;
+}
+
+.WhoAreWe-4 {
+  color: #1E1E1E;
+}
+
+.WhoAreWe-5 {
+  color: white;
+}
+
+
+.Rectangle-47 {
+  height: 394px;
+  flex-grow: 0;
+  padding: 118px 129px 119px 80px;
+  background-color: #e2d6e6;
+}
+
+.LA-PALMA-is-the-only-destination-to-enjoy-the-palm-life-A-breath-taking-concept-inspired-by-tropica {
+  width: 881px;
+  height: 157px;
+  flex-grow: 0;
+  font-family: Hunter;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.Rectangle-43 {
+  padding: 81px 128px 110px 114px;
+  background-color: #ce7a23;
+}
+
+.OUR-SERVICES {
+  width: 180px;
+  height: 29px;
+  margin: 0 0 15px;
+  font-family: Hunter;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-align: left;
+  color: #fff;
+}
+
+.Hair-color-Hair-treatments-Hair-styling-Nails-Lashes {
+  width: 167px;
+  height: 159px;
+  margin: 15px 13px 0 0;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Rectangle-45 {
+  height: 674px;
+  padding: 103px 296px 103px 81px;
+  background-color: #eca9a1;
+}
+
+.infolapalmasa-966-50-993-3225 {
+  width: 204px;
+  height: 64px;
+  flex-grow: 0;
+  margin: 0 176px 23px 0;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Uthman-Ibn-Affan-RD-8114-2169-12451-RIYADH {
+  width: 380px;
+  height: 64px;
+  flex-grow: 0;
+  margin: 23px 0 50px;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Working-hours-Monday-to-Friday-0900---2000 {
+  width: 190px;
+  height: 103px;
+  flex-grow: 0;
+  margin: 0 0 17px;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Working-hours-Monday-to-Friday-0900---2000 .text-style-1 {
+  font-weight: 500;
+}
+
+.Working-hours-Monday-to-Friday-0900---2000 .text-style-2 {
+  font-weight: normal;
+}
+
+.Saturday-0900---1800 {
+  width: 151px;
+  height: 65px;
+  flex-grow: 0;
+  margin: 17px 39px 17px 0;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Saturday-0900---1800 .text-style-1 {
+  font-weight: 300;
+}
+
+.Sunday-0900---1800 {
+  width: 151px;
+  height: 65px;
+  flex-grow: 0;
+  margin: 17px 39px 0 0;
+  font-family: HelveticaNeue;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-align: left;
+  color: #fff;
+}
+
+.Sunday-0900---1800 .text-style-1 {
+  font-weight: 300;
+}
+
+
+.Rectangle-46 {
+  height: 674px;
+  padding: 81px 120px 81px 123px;
+  background-color: #5b7d65;
+}
+
+.Rectangle-46 {
+  padding: 20px; /* Add padding to the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-screen {
+  position: relative;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.responsive-img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.centered-img {
+  margin: auto;
+}
+
+.Rectangle10 {
+  width: 391px;
+  height: 210px;
+  background: linear-gradient(0deg, #E2D6E6 0%, #E2D6E6 100%);
+}
+
+.D12921b3d570fd9501f4d7f5793eab361 {
+  width: 362px;
+  height: 400px;
+}
+
+
+
+.home-image-1 {
+  height: 400px;
+  width: 362px;
+
+}
+
+.overlap-group-11 {
+  height: 401px;
+  position: relative;
+  width: 1152px;
+}
+
+.overlap-group-container {
+  align-items: flex-end;
+  display: flex;
+  height: 400px;
+  left: 0;
+  min-width: 1152px;
+  position: absolute;
+  top: 1px;
+
+}
+
+.flex-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 76px;
+  height: 191px;
+  justify-content: flex-end;
+  min-width: 824px;
+  padding: 22px 29px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  min-height: 141px;
+  width: 329px;
+}
+
+.you-are-made-to_glow {
+  color: black;
+  font-family: Hunter;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: normal;
+  min-height: 88px;
+  width: 329px;
+
+}
+
+
+
+.Rectangle16 {
+  width: 824px;
+  height: 191px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #F9F6EC;
+}
+
+
+.Frame13 {
+  width: 220px;
+  height: 42px;
+  padding: 10px 18px;
+  position: absolute;
+  left: 54px;
+  top: 130px;
+  background: #CE7A23;
+  border-radius: 23.5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.StartBooking {
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  word-wrap: break-word;
+}
+
+.OurServicesIncludeHairColorHairTreatmentsHairStylingNailsLashes {
+  width: 336px;
+  height: 144px;
+  position: absolute;
+  left: 459px;
+  top: 24px;
+}
+
+.service-title, .service-list {
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+  letter-spacing: 0.85px;
+  word-wrap: break-word;
+  color: black;
+}
+
+.service-title {
+  font-weight: 500;
+}
+
+.service-list {
+  font-weight: 300;
+}
+
+
+/* Existing styles */
+
+.Rectangle10 {
+  width: 391px;
+  height: 210px;
+  background: linear-gradient(0deg, #E2D6E6 0%, #E2D6E6 100%);
+}
+
+.D12921b3d570fd9501f4d7f5793eab361 {
+  width: 362px;
+  height: 400px;
+}
+
+.Group74 {
+  width: 433px;
+  height: 209px;
+  position: relative;
+}
+
+.Rectangle15 {
+  width: 433px;
+  height: 209px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ECA9A1;
+}
+
+
+
+.Vector {
+  background: #CE7A23;
+}
+
+
+
+
+
+.Rectangle-15 {
+  width: 433px;
+  height: 209px;
+  flex-grow: 0;
+  margin: 155px 0 0;
+  padding: 52px 130px 53px;
+  background-color: #eca9a1;
+}
+
+.Rectangle-10 {
+  width: 391px;
+  height: 210px;
+  margin: 154px 0 0;
+  background-color: #e2d6e6;
+}
+
+.img-fluid3 {
+  width: 412px;
+  height: 400px;
+}
+.img-fluid {
+  width: 412px;
+  height: 209px;
+}
+
+.equal-img {
+  height: 209px;
+  object-fit: cover;
+  width: 412px;
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Normal view: separate images */
+.col-lg-6.col-md-6.col-sm-6 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* Mobile view: images connected */
+@media (max-width: 767.98px) {
+  .col-lg-6.col-md-6.col-sm-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Group73 {
+    flex-direction: column;
+  }
+  .YouAreMadeToGlow {
+    font-size: 30px;
+  }
+}

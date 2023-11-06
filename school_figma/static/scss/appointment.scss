@@ -1,0 +1,110 @@
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.custom-card, .custom-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  /* To use absolute positioning within card */
+  width: 100%;
+  height: 827px;
+  flex-grow: 0;
+  object-fit: contain;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.custom-card {
+  background-color: #efa693;
+  cursor: pointer;
+}
+
+.custom-card2 {
+  background-color: #fdd775;
+
+}
+
+.custom-card:hover, .custom-card2:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}
+
+.custom-card:hover {
+  background-color: #e89287;
+}
+
+.custom-card2:hover {
+  background-color: #fccc65;
+}
+
+.HOME-RESERVATION {
+  z-index: 1;  /* To appear on top of the image */
+  width: 493px;
+  height: 138px;
+  flex-grow: 0;
+  object-fit: contain;
+  -webkit-text-stroke: 0.5px #fdd775;
+  font-family: Hunter;
+  font-size: 65px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.25px;
+  text-align: center;
+  color: #fdd775;
+}
+.VISIT-LA-PALMA {
+    z-index: 1;  /* To appear on top of the image */
+
+  width: 493px;
+  height: 138px;
+  flex-grow: 0;
+  object-fit: contain;
+  -webkit-text-stroke: 0.5px #eca9a1;
+  font-family: Hunter;
+  font-size: 65px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.25px;
+  text-align: center;
+  color: #efa693;
+}
+.YELLOW-LEAVE {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.BROWN-LEAVE {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin-left: 50px;
+}
+
+.frame-119 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  margin-top: 85px;
+}
+
+.PINK-LEAVE {
+  position: absolute;
+  bottom: -50px;
+  left: -40px;
+  z-index: 0;
+}

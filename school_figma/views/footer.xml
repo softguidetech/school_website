@@ -1,0 +1,130 @@
+<odoo>
+    <data>
+        <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
+            <xpath expr="//footer" position="replace">
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&amp;display=swap"
+                      rel="stylesheet"/>
+                <footer>
+                    <div class="footer-wrapper">
+                        <div class="footer-columns">
+                            <section style="background-image: none;" class="o_colored_level pb8">
+                                <ul>
+                                    <li>
+                                        <h2>
+                                            <strong>
+                                                <span style="font-size: 24px;"><span
+                                                        class="fa fa-clone fa-2x text-o-color-4"
+                                                        data-bs-original-title="" title=""
+                                                        aria-describedby="tooltip996518"
+                                                        style="background-color: rgb(74, 16, 49);"/>Book Store
+                                                </span>
+                                            </strong>
+                                            <br/>
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <span>Lorem ipsum is simply dummy&amp;nbsp; text of</span>
+                                    </li>
+                                    <li>
+                                        <span>&amp;nbsp;the printing and typesetting industry.</span>
+                                    </li>
+                                    <li>Lorem ipsum has been the industry's&amp;nbsp;</li>
+                                    <li>standard dummy a type specimen</li>
+                                    <li>&amp;nbsp;boom
+                                        <br/>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section style="background-image: none;" class="o_colored_level">
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <u>
+                                                <span style="font-size: 18px;">Company</span>
+                                            </u>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="about">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/shop" title="how to work">How to work?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="About">Popular Course</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contactus" title="service">Service</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section style="background-image: none;" class="o_colored_level">
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <u>
+                                                <span style="font-size: 18px;">Courses</span>
+                                            </u>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Categories">Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Offline Course">Offline Course</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Video Course">Video Course</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section style="background-image: none;" class="o_colored_level">
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <u>
+                                                <span style="font-size: 18px;">Support</span>
+                                            </u>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="FAQ">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Help Center">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Career">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Privacy">Privacy</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section style="background-image: none;" class="o_colored_level">
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <u>Contact Info</u>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <span>+0913-705-3875</span>
+                                    </li>
+                                    <li>
+                                        <span>Elizabethj@jourrapide.com</span>
+                                    </li>
+                                    <li>
+                                        <span>4808 Skinner Hollow Road Days Creek, OR 97429</span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <small style="font-family: 'Helvetica Neue; text-align:center; '">BookStore All Right Reserved 2022</small>
+                    </div>
+                </footer>
+            </xpath>
+        </template>
+    </data>
+</odoo>

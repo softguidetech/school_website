@@ -1,0 +1,10 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
