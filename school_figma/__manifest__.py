@@ -9,8 +9,9 @@
     """,
 
     'author': "SGT",
-    'website': "http://www.sgt.com",
-
+    'website': "http://www.softguidetech.com",
+    'price': 140.00,
+    'currency': "EUR",
     'category': 'website',
     'assets': {
         'web.assets_frontend': [
