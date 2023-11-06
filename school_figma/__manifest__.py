@@ -8,7 +8,7 @@
     'description': """
     """,
 
-    'author': "Jamsheena kc",
+    'author': "SGT",
     'website': "http://www.sgt.com",
 
     'category': 'website',
